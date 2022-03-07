@@ -1,0 +1,29 @@
+title: Sindre Sorhus
+description: Full-Time Open-Sourcerer & Aspiring Rebel
+baseurl: ''
+url: https://sindresorhus.com
+permalink: slug
+collections:
+  apps:
+    output: true
+    permalink: /:title
+    include: app-assets
+defaults:
+  - scope:
+      path: ''
+      type: 'apps'
+    values:
+      layout: 'app'
+      type: 'app'
+      show_support_link: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - readme.md
+  - license
+  - CNAME
+  - screenshot.jpg
+  - vendor
+plugins:
+  - jekyll-sitemap
+strict_front_matter: true
