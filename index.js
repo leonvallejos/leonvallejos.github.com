@@ -13,15 +13,6 @@ const injectScript = (source, callback) => {
 	document.head.appendChild(script);
 };
 
-// Unicorn easteregg
-dom.select('#unicorn-btn').addEventListener('click', event => {
-	event.preventDefault();
-	injectScript('cornify.js', () => {
-		cornify();
-		cornify();
-		setInterval(cornify, 1000);
-	});
-}, {once: true});
 
 // Enable again if I put more stuff on the homepage.
 // {
