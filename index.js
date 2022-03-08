@@ -13,7 +13,6 @@ const injectScript = (source, callback) => {
 	document.head.appendChild(script);
 };
 
-
 // Enable again if I put more stuff on the homepage.
 // {
 // 	function hideScrollHint() {
